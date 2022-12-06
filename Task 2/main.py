@@ -19,3 +19,31 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30 },
   { "id": '9', "name": 'Daniel Cane', "age": 51 },
 ]
+
+
+###   1 UZDUOTIS
+
+from statistics import mean
+
+def getUserAverageAge(users):
+  userAges = []
+  for user in users:
+    userAges.append(user["age"])
+  return mean(userAges)
+
+print(getUserAverageAge(users))
+    
+
+# getUserAverageAge(users)
+
+
+###   2 UZDUOTIS
+
+def getUserNames(users):
+  userNames = []
+  for user in users:
+    userNames.append(user["name"])
+    userNames.sort()
+  return userNames
+
+print(getUserNames(users))
