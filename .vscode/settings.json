@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Task 5/modules",
+        "./Task 5/modules/math"
+    ]
+}
